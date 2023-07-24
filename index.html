@@ -29,9 +29,62 @@
             background-repeat: no-repeat;
         }
     </style>
+    <style>
+        @keyframes glow {
+            0% {
+                transform: scale(2.0); /* Initial size */
+                opacity: 0.3; 
+            }
+            25% {
+                transform: scale(2.5); /* Partial size change */
+                opacity: 0.5; 
+            }
+            50% {
+                transform: scale(2.8); /* Increased size at the midpoint */
+                opacity: 0.7; 
+            }
+            90% {
+                transform: scale(1.5); /* Partial size change */
+                opacity: 0.2; 
+            }
+            100% {
+                transform: scale(2.0); /* Back to the original size */
+                opacity: 0.3; 
+            }
+        }
+
+        .glow-image-container {
+            position: relative;
+            display: flex;
+            justify-content: center; /* Center the image horizontally */
+            align-items: center; /* Center the image vertically */
+        }
+
+        .glow-image {
+            /* Add any styles you want for the image here */
+            display: block; /* Remove any extra spacing around the image */
+            margin-left: 50px; /* Adjust the left margin to shift the glow a little to the left */
+        }
+
+        /* Create the glow using the ::before pseudo-element */
+        .glow-image-container::before {
+            content: ''; /* Required placeholder content */
+            position: absolute;
+            top: -50px;
+            left: 0;
+            right: 0;
+            bottom: -50px;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: -1;
+            animation: glow 5s infinite;
+            background: radial-gradient(ellipse at center, rgba(220, 104, 208, 0.7) 5%, rgba(255, 165, 0, 0) 10%);
+            background-size: 100%;
+        }
+    </style>
 <title>Createa Dev Studios</title>
-<div style="text-align: center;">
-    <h1 style="text-decoration: underline;" class="rainbow-text">Createa Dev Studios</h1>
+<div style="text-align: center;" class="glow-image-container">
+    <img class="glow-image" src="Full_Logo_Proto_1.png" alt ="Createa Dev Studios"> <!--Note to self, center the image and figure out the glowing box-->
     <!-- Make sure to make this look way cooler -->
 </div>
 </head>
