@@ -27,6 +27,7 @@
             background-size: cover;
             background-position: unset;
             background-repeat: no-repeat;
+            color: plum;
         }
     </style>
     <style>
@@ -81,6 +82,24 @@
             background: radial-gradient(ellipse at center, rgba(220, 104, 208, 0.7) 5%, rgba(255, 165, 0, 0) 10%);
             background-size: 100%;
         }
+
+        .boxContent {
+            position: center;
+            z-index: 1;
+        }
+
+        .text-box {
+            /* Set the background color and opacity for the colored box */
+            background-color: rgba(182, 0, 0, 0.5); /* Replace with your preferred color and opacity */
+            padding: 10px; /* Add some padding to the box to create space around the text */
+            border-radius: 5px; /* Optionally, add rounded corners to the box */
+            /* Add any other styles you want for the box */
+            position: absolute; /* Position the box relative to its parent (.content) */
+            top: 50%; /* Vertically center the box */
+            left: 50%; /* Horizontally center the box */
+            transform: translate(-50%, -50%); /* Adjust the position to center it precisely */
+            color: plum;
+        }
     </style>
 <title>Createa Dev Studios</title>
 <div style="text-align: center;" class="glow-image-container">
@@ -89,11 +108,15 @@
 </div>
 </head>
 <body>
-    <p style="text-align: center;">This is the inital start of the Createa Dev Studios website, pardon how shite it is</p>
+    <p style="text-align: center;">This is the inital start of the Createa Dev Studios website, pardon how bad it is</p>
     <hr>
-    <p class="NormalText">This website serves as a hub for the collective works of the team at <span class="rainbow-text">Createa Dev Studios </span> <br></p>
-    <p>For sake of existence, the following are completed works by Ethan: <br>20th Century Club Website</p>
-    <p>Ongoing projects include:<br><span class="rainbow-text"> Pyjack </span> (the Python Blackjack game)</p>
+    <h2 class="NormalText" style="text-align: center;">This website serves as a hub for the collective works of the team at <span class="rainbow-text">Createa Dev Studios </span> <br></h2>
+    <div class="boxContent">
+        <div class="text-box">
+            <p>For sake of existence, the following are completed works by Ethan: <br>20th Century Club Website</p>
+            <p>Ongoing projects include:<br><span class="rainbow-text"> Pyjack </span> (the Python Blackjack game)</p>
+        </div>
+    </div>
     
 </body>
 </html>
