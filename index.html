@@ -31,7 +31,6 @@
         }
         a {
             color: inherit;
-            /* Optionally, remove the default underline for links */
             text-decoration: none;
         }
     </style>
@@ -67,9 +66,8 @@
         }
 
         .glow-image {
-            /* Add any styles you want for the image here */
-            display: block; /* Remove any extra spacing around the image */
-            margin-left: 50px; /* Adjust the left margin to shift the glow a little to the left */
+            display: block; 
+            margin-left: 50px; 
         }
 
         /* Create the glow using the ::before pseudo-element */
@@ -89,26 +87,30 @@
         }
 
         .boxContent {
-            position: center;
-            z-index: 1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
         }
 
         .text-box {
-            /* Set the background color and opacity for the colored box */
-            background-color: rgba(182, 0, 0, 0.5); /* Replace with your preferred color and opacity */
-            padding: 10px; /* Add some padding to the box to create space around the text */
-            border-radius: 5px; /* Optionally, add rounded corners to the box */
-            /* Add any other styles you want for the box */
-            position: absolute; /* Position the box relative to its parent (.content) */
-            top: 50%; /* Vertically center the box */
-            left: 50%; /* Horizontally center the box */
-            transform: translate(-50%, -50%); /* Adjust the position to center it precisely */
+            background-color: rgba(182, 0, 0, 0.5); 
+            padding: 10px; 
+            border-radius: 30px; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
             color: plum;
+            flex: 1;
+            max-width: calc(25% - 100px);
+            margin-top: 75px;
+            /*margin-left: 15px;*/
+            /*margin-right: 50px;*/
         }
     </style>
 <title>Createa Dev Studios</title>
 <div style="text-align: center;" class="glow-image-container">
-    <img class="glow-image" src="Full_Logo_Proto_1.png" alt ="Createa Dev Studios"> <!--Note to self, center the image and figure out the glowing box-->
+    <img class="glow-image" src="Full_Logo_Proto_1.png" alt ="Createa Dev Studios"> 
     <!-- Make sure to make this look way cooler -->
 </div>
 </head>
@@ -118,8 +120,18 @@
     <h2 class="NormalText" style="text-align: center;">This website serves as a hub for the collective works of the team at <span class="rainbow-text">Createa Dev Studios </span> <br></h2>
     <div class="boxContent">
         <div class="text-box">
-            <p>The following Projects are completed works by Ethan: <br><ul><u><a href="https://www.colliervilletwentiethcenturyclub.org">20th Century Club Website</a></u></ul></p>
-            <p>Ongoing projects include:<br><span class="rainbow-text"> Pyjack </span> (the Python Blackjack game)</p>
+            <h2>Completed Projects: </h2>
+            <p><ul><u><a href="https://www.colliervilletwentiethcenturyclub.org">20th Century Club Website</a></u></ul></p>
+        </div>
+        <div class="text-box">
+            <h2>Ongoing Projects: </h2>
+            <p><ul><span class="rainbow-text"> Pyjack </span> (the Python Blackjack game)</ul></p>
+        </div>
+        <div class="text-box">
+            <h2>Future Projects: </h2>
+        </div>
+        <div class="text-box">
+            <h2>Abandoned Projects: </h2>
         </div>
     </div>
     
