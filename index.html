@@ -92,20 +92,16 @@
             justify-content: center;
             margin: 20px;
         }
+        .box-wrapper {
+            margin: 10px; /* Create space between each box */
+        }
 
         .text-box {
             background-color: rgba(182, 0, 0, 0.5); 
-            padding: 10px; 
-            border-radius: 30px; 
-            top: 50%; 
-            left: 50%; 
-            transform: translate(-50%, -50%); 
+            padding: 30px; 
+            border-radius: 30px; /* Curve of the boxes */
             color: plum;
-            flex: 1;
-            max-width: calc(25% - 100px);
-            margin-top: 75px;
-            /*margin-left: 15px;*/
-            /*margin-right: 50px;*/
+            max-width: 300px;
         }
     </style>
 <title>Createa Dev Studios</title>
@@ -118,22 +114,29 @@
     <p style="text-align: center;"><b>This is the early stages of the Createa Dev Studios website, this site is a project that is being worked on bit by bit everyday.<br>Check back every so often to see this site evolve into the proffessional domain it's aiming to evolve into over time.</b></p>
     <hr>
     <h2 class="NormalText" style="text-align: center;">This website serves as a hub for the collective works of the team at <span class="rainbow-text">Createa Dev Studios </span> <br></h2>
-    <div class="boxContent">
+<div class="boxContent">
+    <div class="box-wrapper">
         <div class="text-box">
             <h2>Completed Projects: </h2>
             <p><ul><u><a href="https://www.colliervilletwentiethcenturyclub.org">20th Century Club Website</a></u></ul></p>
-        </div>
+        </div> 
+    </div>
+    <div class="box-wrapper">
         <div class="text-box">
             <h2>Ongoing Projects: </h2>
             <p><ul><span class="rainbow-text"> Pyjack </span> (the Python Blackjack game)</ul></p>
         </div>
+    </div>
+    <div class="box-wrapper">
         <div class="text-box">
             <h2>Future Projects: </h2>
         </div>
+    </div>
+    <div class="box-wrapper">
         <div class="text-box">
             <h2>Abandoned Projects: </h2>
         </div>
     </div>
-    
+</div>
 </body>
 </html>
