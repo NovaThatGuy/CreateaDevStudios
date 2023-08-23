@@ -1,113 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Rainbow text script -->
-    <style>
-        @keyframes rainbow {
-            0% { color: red; }
-            16.66% { color: orange; }
-            33.33% { color: yellow; }
-            49.99% { color: green; }
-            66.66% { color: blue; }
-            83.33% { color: indigo; }
-            100% { color: violet; }
-        }
-
-        .rainbow-text {
-            animation: rainbow 3.42s infinite;
-        }
-        .NormalText {
-            color: crimson;
-        }
-    </style>
-    <!-- CSS for Background -->
-    <style>
-        body {
-            background-image: linear-gradient(to bottom, rgba(15, 2, 255, 0.5), rgba(11, 0, 73, 0.6), rgb(63, 0, 5));
-            color: plum;
-        }
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-    </style>
-    <style>
-        @keyframes glow {
-            0% {
-                transform: scale(2.0); /* Initial size */
-                opacity: 0.3; 
-            }
-            25% {
-                transform: scale(2.5); /* Partial size change */
-                opacity: 0.5; 
-            }
-            50% {
-                transform: scale(2.8); /* Increased size at the midpoint */
-                opacity: 0.7; 
-            }
-            90% {
-                transform: scale(1.5); /* Partial size change */
-                opacity: 0.2; 
-            }
-            100% {
-                transform: scale(2.0); /* Back to the original size */
-                opacity: 0.3; 
-            }
-        }
-
-        .glow-image-container {
-            position: relative;
-            display: flex;
-            justify-content: center; /* Center the image horizontally */
-            align-items: center; /* Center the image vertically */
-        }
-
-        .glow-image {
-            display: block; 
-            margin-left: 50px; 
-        }
-
-        /* Create the glow using the ::before pseudo-element */
-        .glow-image-container::before {
-            content: ''; /* Required placeholder content */
-            position: absolute;
-            top: -50px;
-            left: 0;
-            right: 0;
-            bottom: -50px;
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: -1;
-            animation: glow 5s infinite;
-            background: radial-gradient(ellipse at center, rgba(220, 104, 208, 0.7) 5%, rgba(255, 165, 0, 0) 10%);
-            background-size: 100%;
-        }
-
-        .boxContent {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: 20px;
-        }
-        .box-wrapper {
-            margin: 10px; /* Create space between each box */
-        }
-
-        .text-box {
-            background-color: rgba(182, 0, 0, 0.5); 
-            padding: 30px; 
-            border-radius: 30px; /* Curve of the boxes */
-            color: plum;
-            max-width: 300px;
-        }
-        .about-box {
-            background-color: rgba(0, 0, 151, 0.8); 
-            padding: 30px; 
-            border-radius: 30px; /* Curve of the boxes */
-            color: rgb(255, 0, 0);
-            max-width: 500px;
-        }
-    </style>
+    <link href="style.css" rel="stylesheet">
 <title>Createa Dev Studios</title>
 <div style="text-align: center;" class="glow-image-container">
     <img class="glow-image" src="upscale.png" width="325" height="103" alt ="Createa Dev Studios"> 
@@ -116,35 +10,15 @@
 </head>
 <body>
     <p style="text-align: center;"><b>This is the early stages of the Createa Dev Studios website, this site is a project that is being worked on bit by bit everyday.<br>Check back every so often to see this site evolve into the proffessional domain it's aiming to evolve into over time.</b></p>
-    <hr>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="Ongoing Projects.html">Ongoing Projects</a>
+        <a href="#">Completed Projects</a>
+        <a href="#">Future Projects</a>
+        <a href="#">Abandoned Projects</a>
+    </div>
+    <hr class="horizontal-line">
     <h2 class="NormalText" style="text-align: center;">This website serves as a hub for the collective works of the team at <span class="rainbow-text">Createa Dev Studios </span> <br></h2>
-<div class="boxContent">
-    <div class="box-wrapper">
-        <div class="text-box">
-            <h2>Completed Projects: </h2>
-            <p><ul><u><a href="https://www.colliervilletwentiethcenturyclub.org">20th Century Club Website</a></u></ul></p>
-        </div> 
-    </div>
-    <div class="box-wrapper">
-        <div class="text-box">
-            <h2>Ongoing Projects: </h2>
-        </div>
-    </div>
-    <div class="box-wrapper">
-        <div class="text-box">
-            <h2>Future Projects: </h2>
-            <ul>
-                <li><span class="rainbow-text"> Pyjack </span> (the Python Blackjack game)</li>
-                <li><u><a href="DM Assistant.html">Dungeon Master's Assistant</a></u> (the D&D DM's assistant application)</li>
-            </ul>
-        </div>
-    </div>
-    <div class="box-wrapper">
-        <div class="text-box">
-            <h2>Abandoned Projects: </h2>
-        </div>
-    </div>
-</div>
 <div class="boxContent">
     <div class="about-box">
         <h3 style="text-align: center;">About Us</h3>

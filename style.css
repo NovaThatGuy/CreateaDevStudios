@@ -1,0 +1,132 @@
+/*
+Rainbow Text  
+*/ 
+@keyframes rainbow {
+    0% { color: red; }
+    16.66% { color: orange; }
+    33.33% { color: yellow; }
+    49.99% { color: green; }
+    66.66% { color: blue; }
+    83.33% { color: indigo; }
+    100% { color: violet; }
+}
+
+.rainbow-text {
+    animation: rainbow 3.42s infinite;
+}
+.NormalText {
+    color: crimson;
+}
+/*
+Body Style
+*/
+body {
+    background-image: linear-gradient(to bottom, rgba(15, 2, 255, 0.5), rgba(11, 0, 73, 0.6), rgb(63, 0, 5));
+    color: plum;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+/*
+Logo Glow
+*/
+@keyframes glow {
+    0% {
+        transform: scale(2.0); /* Initial size */
+        opacity: 0.3; 
+    }
+    25% {
+        transform: scale(2.5); /* Partial size change */
+        opacity: 0.5; 
+    }
+    50% {
+        transform: scale(2.8); /* Increased size at the midpoint */
+        opacity: 0.7; 
+    }
+    90% {
+        transform: scale(1.5); /* Partial size change */
+        opacity: 0.2; 
+    }
+    100% {
+        transform: scale(2.0); /* Back to the original size */
+        opacity: 0.3; 
+    }
+}
+
+.glow-image-container {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    overflow: hidden;
+}
+
+.glow-image {
+    display: block; 
+    margin-left: 50px; 
+}
+/* Create the glow using the ::before pseudo-element */
+.glow-image-container::before {
+    content: ''; /* Required placeholder content */
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    bottom: -50px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -1;
+    animation: glow 5s infinite;
+    background: radial-gradient(ellipse at center, rgba(220, 104, 208, 0.7) 5%, rgba(255, 165, 0, 0) 10%);
+    background-size: 100%;
+    left: -50px;
+}
+/* 
+Variety of other scripts
+*/
+
+.boxContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.box-wrapper {
+    padding: 10px; /* Create space between each box */
+}
+
+.text-box {
+    background-color: rgba(182, 0, 0, 0.5); 
+    padding: 30px; 
+    border-radius: 30px; /* Curve of the boxes */
+    color: plum;
+    max-width: 300px;
+}
+.about-box {
+    background-color: rgba(0, 0, 151, 0.8); 
+    padding: 30px; 
+    border-radius: 30px; /* Curve of the boxes */
+    color: rgb(255, 0, 0);
+    max-width: 500px;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.horizontal-line {
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+    margin: 20px 0;
+}

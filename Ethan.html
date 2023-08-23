@@ -2,23 +2,10 @@
 <html>
     <head>
         <title>Ethan</title>
+        <link href="style.css" rel="stylesheet">
         <style>
-        .boxContent {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: 20px;
-        }
-        .box-wrapper {
-            margin: 10px; /* Create space between each box */
-        }
-
         .text-box {
-            background-color: rgba(182, 0, 0, 0.5); 
-            padding: 30px; 
-            border-radius: 30px; /* Curve of the boxes */
             color: rgb(14, 0, 205);
-            max-width: 300px;
         }
         html, body {
             min-height: 100%;
@@ -27,14 +14,25 @@
             background-image: linear-gradient(to bottom, rgba(0, 0, 255, 0.651), rgba(0, 128, 0, 0.536), rgba(255, 0, 0, 0.438));
             display: flex;
             flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
         }
         </style>
+        <div style="text-align: center;" class="glow-image-container">
+            <img class="glow-image" src="upscale.png" width="325" height="103" alt ="Createa Dev Studios"> 
+        </div>
     </head>
     <body>
         <h2 style="text-align: center;">Ethan Smith</h2>
         <p style="text-align: center;">This is the start of the About Me page for Ethan, it will undergo heavy renovations in due time.</p>
-        <br>
-        <h2 style="text-align: center;"><a href="index.html">Return Home</a></h2>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="Ongoing Projects.html">Ongoing Projects</a>
+            <a href="#">Completed Projects</a>
+            <a href="#">Future Projects</a>
+            <a href="#">Abandoned Projects</a>
+        </div>
+        <hr class="horizontal-line">
         <p style="text-align: center;">To see the various small works of Ethan, check it out at <a href="https://github.com/NovaThatGuy/Various_Exercises"><u>Github</u></a></p>
         <div class="boxContent">
             <div class="text-box">
