@@ -113,6 +113,13 @@ Variety of other scripts
     color: rgb(255, 0, 0);
     max-width: 500px;
 }
+.common-box {
+    background-color: rgba(0, 0, 111, 0.288); 
+    padding: 30px; 
+    border-radius: 30px; /* Curve of the boxes */
+    color: rgb(255, 215, 215);
+    max-width: 500px;
+}
 .nav {
     display: flex;
     justify-content: space-between;
