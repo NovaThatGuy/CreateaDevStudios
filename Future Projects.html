@@ -26,25 +26,48 @@
         <hr class="horizontal-line">
         <h2>Future Projects</h2>
         <p style="text-align: center;">This is the Future Projects part of our website, it is very early in development so please don't be too hard on it.</p>
-        <div class="image-box">
-            <a href="#">
-                <img src="PyJackLogo.jpg">
-                <div class="text-overlay">
-                    <p>PyJack</p>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <a href="#">
+                        <img src="PyJackLogo.jpg">
+                        <div class="text-overlay-slider">
+                            <p>Pyjack</p>
+                        </div>
+                    </a>
                 </div>
-            </a>
+                <div class="slide">
+                    <a href="DM Assistant.html">
+                        <img src="D&D DMA Site.png">
+                        <div class="text-overlay-slider">
+                            <p>D&D Dungeon Master's Assistant</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="slide">
+                    <img src="" class="placeholder-image">
+                    <div class="text-overlay-slider">
+                        <p>Nothing here yet</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="" class="placeholder-image">
+                    <div class="text-overlay-slider">
+                        <p>Nothing here yet</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="" class="placeholder-image">
+                    <div class="text-overlay-slider">
+                        <p>Nothing here yet</p>
+                    </div>
+                </div>
+                <!-- Add more slide elements for additional images -->
+            </div>
         </div>
-        <br>
-        <div class="image-box image-exception">
-            <a href="DM Assistant.html">
-                <div class="image-wrapper">
-                    <img src="D&D DMA Site.png" class="image-exception" style="object-fit: contain;">
-                </div>
-                <div class="text-overlay">
-                    <p>D&D Dungeon Master's Assistant</p>
-                </div>
-            </a>
-        </div>
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+        <script src="Slider.js"></script>
     </body>
     <footer>
         <hr class="horizontal-line">
