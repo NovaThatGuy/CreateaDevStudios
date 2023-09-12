@@ -192,5 +192,19 @@ Link Box CSS for Project links
     color: inherit;
 }
 
+/* Devlog */
+#toggleLogButton {
+    background-color: #206fc394;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
 
+#devLog {
+    background-color: #01318a89;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+}
 
