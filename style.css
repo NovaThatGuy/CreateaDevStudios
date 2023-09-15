@@ -268,3 +268,38 @@ Link Box CSS for Project links
     border: none;
     cursor: pointer;
 }
+
+
+/* Meet the Team scripts */
+.team {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.teamPerson {
+    position: relative;
+    margin: 0 10px;
+}
+
+.teamImage img {
+    width: 390px;
+    height: 400px;
+}
+
+.text-overlay-team {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 95%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.teamPerson:hover .text-overlay-team {
+    opacity: 1;
+}
