@@ -206,6 +206,7 @@ Link Box CSS for Project links
     border: 1px solid #ccc;
     padding: 10px;
     margin-top: 10px;
+    max-width: 600px;
 }
 
 
