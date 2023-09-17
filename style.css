@@ -144,7 +144,43 @@ Variety of other scripts
     background-color: gray;
     margin: 20px 0;
 }
+.box-container {
+    max-width: 1150px; /* Adjust as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    display: flex; /* Use flexbox to arrange boxes horizontally */
+    justify-content: space-between; /* Add space between boxes */
+    flex-wrap: wrap; /* Allow boxes to wrap to the next row */
+}
+.bg-box {
+    flex-basis: calc(33.33% - 20px); /* Set the width for each box (adjust as needed) */
+    background-image: url(BlankPerson.img);
+    margin-bottom: 20px; /* Add space between boxes vertically */
+    margin-right: 50px;
+    margin-left: 50px;
+    background-size: cover; /* Cover the entire box with the background image */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    padding: 30px; /* Add padding inside each box */
+    color: rgb(255, 255, 255, 100%); /* Text color */
+    text-align: center; /* Center the text horizontally */
+    opacity: 0.9; /* Adjust the opacity as needed */
+}
+.bg-text-overlay {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255, 1);
+    text-align: center;
+    opacity: 1;
+}
 
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .common-box {
+        flex-basis: calc(50% - 20px); /* Adjust width for smaller screens */
+    }
+}
 /*
 Link Box CSS for Project links
 */
