@@ -3,6 +3,9 @@
     <head>
         <title>James</title>
         <link href="style.css" rel="stylesheet">
+        <div class="background-container">
+            <img class="gif" src="Galaxy.gif" alt="GIF">
+        </div>
         <style>
         .text-box {
             color: rgb(14, 0, 205);
@@ -17,10 +20,13 @@
             min-height: 100vh;
         }
         </style>
-        <div style="text-align: center;" class="glow-image-container">
-            <a href="index.html">
-                <img class="glow-image" src="upscale.png" width="325" height="103" alt ="Createa Dev Studios"> 
-            </a>
+        <div style="z-index: 2;">
+            <div style="text-align: center;" class="glow-image-container">
+                <a href="index.html">
+                    <img class="glow-image" src="upscale.png" width="325" height="103" alt ="Createa Dev Studios"> 
+                </a>
+                <!-- Make sure to make this look way cooler -->
+            </div>
         </div>
     </head>
     <body>
@@ -33,7 +39,9 @@
             <a href="Meet the Team.html">Meet the Team</a>
         </div>
         <hr class="horizontal-line">
-        <h2 style="text-align: center;">James W</h2>
+        <div style="z-index: 2;"> 
+            <h2 style="text-align: center;">James W</h2>
+        </div>
     </body>
     <footer>
         <hr class="horizontal-line">
