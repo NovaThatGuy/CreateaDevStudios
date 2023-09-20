@@ -43,23 +43,23 @@ Logo Glow
 */
 @keyframes glow {
     0% {
-        transform: scale(2.0); /* Initial size */
+        transform: scale(3.0); /* Initial size */
         opacity: 0.3; 
     }
     25% {
-        transform: scale(2.5); /* Partial size change */
+        transform: scale(3.5); /* Partial size change */
         opacity: 0.5; 
     }
     50% {
-        transform: scale(2.8); /* Increased size at the midpoint */
+        transform: scale(3.7); /* Increased size at the midpoint */
         opacity: 0.7; 
     }
     90% {
-        transform: scale(1.5); /* Partial size change */
+        transform: scale(3.5); /* Partial size change */
         opacity: 0.2; 
     }
     100% {
-        transform: scale(2.0); /* Back to the original size */
+        transform: scale(3.0); /* Back to the original size */
         opacity: 0.3; 
     }
 }
@@ -70,6 +70,7 @@ Logo Glow
     justify-content: center; /* Center the image horizontally */
     align-items: center; /* Center the image vertically */
     overflow: hidden;
+    z-index: -1;
 }
 
 .glow-image {
