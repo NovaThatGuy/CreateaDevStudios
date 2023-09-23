@@ -365,3 +365,29 @@ Link Box CSS for Project links
     pointer-events: none;
 }
 
+
+/* Blog code */
+/* Add your styles here for article summaries and full articles */
+.article-list {
+    /* Style for article summaries (rectangles) */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.summary-rectangle {
+    background-color: silver;
+    padding: 10px;
+    cursor: pointer;
+    color: crimson;
+}
+
+.article-full {
+    display: none; /* Initially hide the full article container */
+    /* Style for full article display */
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: grey;
+    color: aqua;
+}
