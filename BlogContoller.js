@@ -22,6 +22,12 @@ const articles = {
         author: 'Ethan Smith',
         content: '<p>We\'ve been fairly dormant for a little over a week now and for openness and fairness lets go over what\'s been going on. So first we\'ve experienced a lack of notable updates due to Personal Life complicatons for our main coder, me. I have been pushing very minor updates to the site, though they are likely too small to even notice. This will no longer be the case moving forward, I will be continuing to work on the site and push major updates as I complete them. We do still struggle with manpower and lack of availability for most of the team, but this should also be being eased over and more progress will be made more consistently. We are considering working on YouTube videos again as well for any who may be interested in any video based content we create. Stay tuned for more updates in the coming days.</p>',
     },
+    4:  {
+        title: 'The Plan',
+        date: 'October 9, 2023',
+        author: 'Ethan Smith',
+        content: '<p>Createa Dev Studios as a group is still in it\'s early phase of existence, and so to promote a steady growth we\'ve decided to cover what the plan is to keep moving forward. I, Ethan, am working on our website whenever I think of a way to improve it, this can be slow due to a lack of experience in UI/UX design, I also further my own coding skills with various projects when I\'m not working for a client. To keep moving forward I intend to continue working on my coding skills in general, and will continue to work on the website when I can, I will be taking on various courses to improve or gain new skills as well. We do need to find more clients and are always open to work, but due to a lack of marketing skills I am unable to attract new people, I am however quite good at sales, so one of our other goals is to find someone who can handle marketing among other various smaller works. Once we are able to opperate with 2 or 3 people regularly we should begin to make great strides as we\'ve always done before.',
+    },
 };
 
 // Add a click event listener to each summary rectangle
