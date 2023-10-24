@@ -35,7 +35,7 @@
         <div style="align-items: center;">
             <div class="common-box">
                 <h3 style="text-align: center;">Classical VRC World</h3>
-                <p>This is a work in progress 3D world built for the game VR Chat. It will consist of 3 major rooms, including a spawn area, main room, and balcony area. Rough modeling and design sketches have been made for it already and development is steady, a devlog will be added shortly.</p>
+                <p>This is a work in progress 3D world built for the game VR Chat. It will consist of 3 major rooms, including a spawn area, main room, and balcony area. Rough modeling and design sketches have been made for it already and development is steady.</p>
             </div>
         </div>
     </div>
@@ -53,9 +53,22 @@
                 </div>
             </div>
         </div>
-    </div> 
-    <button id="prevBtn">Previous</button>
-    <button id="nextBtn">Next</button>
+    </div>
+    <div style="z-index: 3;"> 
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+        <div style="text-align: center;">
+            <button id="toggleLogButton">Toggle Dev Log</button>
+        </div>
+    </div>
+    <div style="z-index: 2;">
+        <div id="devLog" style="display: none;">
+            <h3>Devlog Report: 1</h3>
+            <h4>Date: 10/24/23</h4>    
+            <p>A week or so has passed since development on this world has begun, and things are moving along slowly but steadily. As of now we have the genral layout and important decoration points done. We still need to texture and fully decorate the building itself and finish working on lighting among other things.</p>
+        </div>
+    </div>
+    <script src="Devlog.js"></script>
     <script src="Slider.js"></script>   
     <script src="Background Gif Controller.js"></script>
 </body>
